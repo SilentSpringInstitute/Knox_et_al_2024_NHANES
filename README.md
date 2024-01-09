@@ -15,11 +15,12 @@ Once we created the public dataset, we provided it to the RDC. Our RDC analyst t
 
 "RDC_publish.R" is the final version of the script that was run at the RDC. This script produces all output that is used in the paper.
 
-The remaining scripts formats the output from the RDC analysis for publication, as follows:
-"Make Paper Tables_publish.R" selects/formats the RDC output that is shown in tables 2-5, with the exception of the observation counts, which are computed in "Count_the_Ns_publish.R" from the public data.
+The following scripts format the output we took out of the RDC and ready it for publication, as follows:
+"Make Paper Tables_publish.R" selects and formats the RDC output that is shown in tables 2-5, with the exception of the observation counts, which are computed in "Count_the_Ns_publish.R" from the public data.
 
 "make figure 1_publish.R" pulls the necessary RDC output and creates figure 1 in the paper.
 
-"make public data figures_publish.R" pulls and formats the public NHANES data that is used to create figures 2-4 and "make final paper figures_publish.R" takes this data and makes the actual figures 2-4.
-
 "Creatinine sensitivity check_publish.R" is the sensitivity check that makes sure the regression results for urine metabolites are not materially altered by the includion or exclusion of ln(creatinine) on the RHS. These results are shown in the supplemental.
+
+Additonally, figures 2-4 in the paper were created using public NHANES data.
+"make public data figures_publish.R" pulls and formats the public NHANES data that is used to create figures 2-4 and "make final paper figures_publish.R" takes this data and makes the actual figures 2-4.
